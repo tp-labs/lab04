@@ -49,16 +49,17 @@ $ ex -sc '1i|<фрагмент_вставки_значка>' -cx README.md
 ```
 
 ```bash
-$ mkdir artifacts && cd artifacts
-$ screencapture -T 10 screenshot.jpg
-<Command>-T
-$ open https://github.com/${GITHUB_USERNAME}/lab5
+$ git add .travis.yml
+$ git add README.md
+$ git commit -m"added CI"
+$ git push origin master
 ```
 
 ```bash
-$ git add .
-$ git commit -m"added CI"
-$ git push origin master
+$ mkdir artifacts 
+$ screencapture -T 20 artifacts/screenshot.jpg
+<Command>-T
+$ open https://github.com/${GITHUB_USERNAME}/lab5
 ```
 
 ## Links
