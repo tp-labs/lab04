@@ -23,9 +23,9 @@ $ export GITHUB_USERNAME=<имя_пользователя>
 
 ```bash
 $ git clone https://github.com/${GITHUB_USERNAME}/lab4 lab5
+$ cd lab5
 $ git remote remove origin
 $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab5
-$ cd lab5
 ```
 
 ```bash
