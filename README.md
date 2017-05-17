@@ -48,7 +48,7 @@ EOF
 ```
 
 ```bash
-$ travis logs --github-token ${GITHUB_TOKEN}
+$ travis login --github-token ${GITHUB_TOKEN}
 ```
 
 ```bash
