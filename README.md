@@ -14,6 +14,7 @@ $ open https://travis-ci.org
 - [ ] 4. Получить фрагмент вставки значка сервиса **Travis CI** в формате **Markdown**
 - [ ] 5. Выполнить инструкцию учебного материала
 - [ ] 6. Ознакомиться со ссылками учебного материала
+- [ ] 7. Составить отчет и отправить ссылку личным сообщением в **Slack**
 
 ## Tutorial
 
@@ -55,14 +56,11 @@ $ git commit -m"added CI"
 $ git push origin master
 ```
 
-```bash
-$ mkdir artifacts 
-$ screencapture -T 20 artifacts/screenshot.jpg
-<Command>-T
-$ open https://github.com/${GITHUB_USERNAME}/lab5
-```
-
 ## Links
 
 - [AppVeyour](https://www.appveyor.com/)
 - [GitLab CI](https://about.gitlab.com/gitlab-ci/)
+
+```
+Copyright (c) 2017 Vyacheslav Vershinin
+```
