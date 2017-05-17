@@ -53,14 +53,6 @@ $ travis login --github-token ${GITHUB_TOKEN}
 
 ```bash
 $ travis lint
-$ travis accounts
-$ travis sync
-$ travis repos
-$ travis enable
-$ travis whatsup
-$ travis branches
-$ travis history
-$ travis show
 ```
 
 ```bash
@@ -72,6 +64,18 @@ $ git add .travis.yml
 $ git add README.md
 $ git commit -m"added CI"
 $ git push origin master
+```
+
+```bash
+$ travis lint
+$ travis accounts
+$ travis sync
+$ travis repos
+$ travis enable
+$ travis whatsup
+$ travis branches
+$ travis history
+$ travis show
 ```
 
 ## Links
