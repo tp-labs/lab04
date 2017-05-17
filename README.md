@@ -10,16 +10,18 @@ $ open https://travis-ci.org
 
 - [ ] 1. Авторизоваться на сервисе **Travis CI** с использованием **GitHub** аккаунта
 - [ ] 2. Создать публичный репозиторий с названием **lab5** на сервисе **GitHub**
-- [ ] 3. Включить интеграцию сервиса **Travis CI** с созданным репозиторием
-- [ ] 4. Получить фрагмент вставки значка сервиса **Travis CI** в формате **Markdown**
-- [ ] 5. Выполнить инструкцию учебного материала
-- [ ] 6. Ознакомиться со ссылками учебного материала
-- [ ] 7. Составить отчет и отправить ссылку личным сообщением в **Slack**
+- [ ] 3. Ознакомиться со ссылками учебного материала
+- [ ] 4. Включить интеграцию сервиса **Travis CI** с созданным репозиторием
+- [ ] 5. Получить токен для **Travis CLI** с правами **repo** и **user**
+- [ ] 6. Получить фрагмент вставки значка сервиса **Travis CI** в формате **Markdown**
+- [ ] 7. Выполнить инструкцию учебного материала
+- [ ] 8. Составить отчет и отправить ссылку личным сообщением в **Slack**
 
 ## Tutorial
 
 ```bash
 $ export GITHUB_USERNAME=<имя_пользователя>
+$ export GITHUB_TOKEN=<полученный_токен>
 ```
 
 ```bash
@@ -46,6 +48,22 @@ EOF
 ```
 
 ```bash
+$ travis logs --github-token ${GITHUB_TOKEN}
+```
+
+```bash
+$ travis lint
+$ travis accounts
+$ travis sync
+$ travis repos
+$ travis enable
+$ travis whatsup
+$ travis branches
+$ travis history
+$ travis show
+```
+
+```bash
 $ ex -sc '1i|<фрагмент_вставки_значка>' -cx README.md
 ```
 
@@ -58,6 +76,7 @@ $ git push origin master
 
 ## Links
 
+- [Travis Client](https://github.com/travis-ci/travis.rb)
 - [AppVeyour](https://www.appveyor.com/)
 - [GitLab CI](https://about.gitlab.com/gitlab-ci/)
 
