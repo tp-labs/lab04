@@ -9,7 +9,7 @@ $ open https://travis-ci.org
 ## Tasks
 
 - [ ] 1. Авторизоваться на сервисе **Travis CI** с использованием **GitHub** аккаунта
-- [ ] 2. Создать публичный репозиторий с названием **lab5** на сервисе **GitHub**
+- [ ] 2. Создать публичный репозиторий с названием **lab05** на сервисе **GitHub**
 - [ ] 3. Ознакомиться со ссылками учебного материала
 - [ ] 4. Включить интеграцию сервиса **Travis CI** с созданным репозиторием
 - [ ] 5. Получить токен для **Travis CLI** с правами **repo** и **user**
@@ -25,10 +25,10 @@ $ export GITHUB_TOKEN=<полученный_токен>
 ```
 
 ```bash
-$ git clone https://github.com/${GITHUB_USERNAME}/lab4 lab5
-$ cd lab5
+$ git clone https://github.com/${GITHUB_USERNAME}/lab04 lab05
+$ cd lab05
 $ git remote remove origin
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab5
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab05
 ```
 
 ```bash
@@ -76,6 +76,19 @@ $ travis whatsup
 $ travis branches
 $ travis history
 $ travis show
+```
+
+## Report
+
+```bash
+$ cd ~/workspace/labs/
+$ export LAB_NUMBER=05
+$ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
+$ mkdir reports/lab${LAB_NUMBER}
+$ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
+$ cd reports/lab${LAB_NUMBER}
+$ edit REPORT.md
+$ gistup -m"lab${LAB_NUMBER}"
 ```
 
 ## Links
