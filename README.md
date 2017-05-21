@@ -48,6 +48,19 @@ EOF
 ```
 
 ```bash
+$ cat >> .travis.yml <<EOF
+
+addons:
+  apt:
+    sources:
+      - george-edison55-precise-backports
+    packages:
+      - cmake
+      - cmake-data
+EOF
+```
+
+```bash
 $ travis login --github-token ${GITHUB_TOKEN}
 ```
 
