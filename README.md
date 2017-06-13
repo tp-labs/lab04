@@ -2,7 +2,7 @@
 
 Данная лабораторная работа посвещена изучению систем непрерывной интеграции на примере сервиса **Travis CI**
 
-```bash
+```ShellSession
 $ open https://travis-ci.org
 ```
 
@@ -19,25 +19,25 @@ $ open https://travis-ci.org
 
 ## Tutorial
 
-```bash
+```ShellSession
 $ export GITHUB_USERNAME=<имя_пользователя>
 $ export GITHUB_TOKEN=<полученный_токен>
 ```
 
-```bash
+```ShellSession
 $ git clone https://github.com/${GITHUB_USERNAME}/lab04 lab05
 $ cd lab05
 $ git remote remove origin
 $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab05
 ```
 
-```bash
+```ShellSession
 $ cat > .travis.yml <<EOF
 language: cpp
 EOF
 ```
 
-```bash
+```ShellSession
 $ cat >> .travis.yml <<EOF
 
 script:
@@ -47,7 +47,7 @@ script:
 EOF
 ```
 
-```bash
+```ShellSession
 $ cat >> .travis.yml <<EOF
 
 addons:
@@ -60,26 +60,26 @@ addons:
 EOF
 ```
 
-```bash
+```ShellSession
 $ travis login --github-token ${GITHUB_TOKEN}
 ```
 
-```bash
+```ShellSession
 $ travis lint
 ```
 
-```bash
+```ShellSession
 $ ex -sc '1i|<фрагмент_вставки_значка>' -cx README.md
 ```
 
-```bash
+```ShellSession
 $ git add .travis.yml
 $ git add README.md
 $ git commit -m"added CI"
 $ git push origin master
 ```
 
-```bash
+```ShellSession
 $ travis lint
 $ travis accounts
 $ travis sync
@@ -93,7 +93,7 @@ $ travis show
 
 ## Report
 
-```bash
+```ShellSession
 $ cd ~/workspace/labs/
 $ export LAB_NUMBER=05
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
