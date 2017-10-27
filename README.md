@@ -26,8 +26,23 @@ $ export GITHUB_TOKEN=<полученный_токен>
 ```
 
 ```ShellSession
-$ git clone https://github.com/${GITHUB_USERNAME}/lab04 lab05
-$ cd lab05
+$ cd ${GITHUB_USERNAME}/workspace
+$ pushd .
+$ source scripts/activate
+```
+
+```ShellSession
+$ \curl -sSL https://get.rvm.io | bash -s -- --ignore-dotfiles
+$ echo "source $HOME/.rvm/scripts/rvm" >> scripts/activate
+$ rvm autolibs disable
+$ rvm install ruby-2.4.2
+$ rvm use 2.4.2 --default
+$ gem install travis
+```
+
+```ShellSession
+$ git clone https://github.com/${GITHUB_USERNAME}/lab04 projects/lab05
+$ cd projects/lab05
 $ git remote remove origin
 $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab05
 ```
@@ -95,7 +110,7 @@ $ travis show
 ## Report
 
 ```ShellSession
-$ cd ~/workspace/labs/
+$ popd
 $ export LAB_NUMBER=05
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
 $ mkdir reports/lab${LAB_NUMBER}
