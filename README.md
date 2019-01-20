@@ -34,6 +34,7 @@ $ source scripts/activate
 ```ShellSession
 $ \curl -sSL https://get.rvm.io | bash -s -- --ignore-dotfiles
 $ echo "source $HOME/.rvm/scripts/rvm" >> scripts/activate
+$ . scripts/activate
 $ rvm autolibs disable
 $ rvm install ruby-2.4.2
 $ rvm use 2.4.2 --default
