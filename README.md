@@ -1,4 +1,4 @@
-## Laboratory work V
+## Laboratory work IV
 
 Данная лабораторная работа посвещена изучению систем непрерывной интеграции на примере сервиса **Travis CI**
 
@@ -9,7 +9,7 @@ $ open https://travis-ci.org
 ## Tasks
 
 - [ ] 1. Авторизоваться на сервисе **Travis CI** с использованием **GitHub** аккаунта
-- [ ] 2. Создать публичный репозиторий с названием **lab05** на сервисе **GitHub**
+- [ ] 2. Создать публичный репозиторий с названием **lab04** на сервисе **GitHub**
 - [ ] 3. Ознакомиться со ссылками учебного материала
 - [ ] 4. Включить интеграцию сервиса **Travis CI** с созданным репозиторием
 - [ ] 5. Получить токен для **Travis CLI** с правами **repo** и **user**
@@ -41,10 +41,10 @@ $ gem install travis
 ```
 
 ```ShellSession
-$ git clone https://github.com/${GITHUB_USERNAME}/lab04 projects/lab05
-$ cd projects/lab05
+$ git clone https://github.com/${GITHUB_USERNAME}/lab03 projects/lab04
+$ cd projects/lab04
 $ git remote remove origin
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab05
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab04
 ```
 
 ```ShellSession
@@ -111,7 +111,7 @@ $ travis show
 
 ```ShellSession
 $ popd
-$ export LAB_NUMBER=05
+$ export LAB_NUMBER=04
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
 $ mkdir reports/lab${LAB_NUMBER}
 $ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
@@ -127,5 +127,5 @@ $ gistup -m "lab${LAB_NUMBER}"
 - [GitLab CI](https://about.gitlab.com/gitlab-ci/)
 
 ```
-Copyright (c) 2017 Братья Вершинины
+Copyright (c) 2015-2019 The ISC Authors
 ```
