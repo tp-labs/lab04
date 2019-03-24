@@ -49,7 +49,7 @@ $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab04
 
 ```ShellSession
 $ cat > .travis.yml <<EOF
- language: cpp
+language: cpp
 EOF
 ```
 
