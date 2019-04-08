@@ -1,4 +1,5 @@
 ## Laboratory work IV
+https://travis-ci.org/EvgeniiS2019/lab04.svg?branch=master
 
 Данная лабораторная работа посвещена изучению систем непрерывной интеграции на примере сервиса **Travis CI**
 
