@@ -1,6 +1,5 @@
 ## Laboratory work IV
-https://travis-ci.org/EvgeniiS2019/lab04.svg?branch=master
-
+[![Build Status](https://travis-ci.com/EvgeniiS2019/lab04.svg?branch=master)](https://travis-ci.com/EvgeniiS2019/lab04)
 Данная лабораторная работа посвещена изучению систем непрерывной интеграции на примере сервиса **Travis CI**
 
 ```ShellSession
