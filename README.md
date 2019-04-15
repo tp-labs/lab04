@@ -85,7 +85,7 @@ $ travis lint
 ```
 
 ```ShellSession
-$ ex -sc '1i|<фрагмент_вставки_значка>' -cx README.md
+$ ex -sc '1i|[![Build Status](https://travis-ci.org/EvgeniiS2019/lab04.svg?branch=master)](https://travis-ci.org/EvgeniiS2019/lab04)' -cx README.md
 ```
 
 ```ShellSession
