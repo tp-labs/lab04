@@ -2,7 +2,7 @@
 
 Данная лабораторная работа посвещена изучению систем непрерывной интеграции на примере сервиса **Travis CI**
 
-```ShellSession
+```sh
 $ open https://travis-ci.org
 ```
 
@@ -19,18 +19,18 @@ $ open https://travis-ci.org
 
 ## Tutorial
 
-```ShellSession
+```sh
 $ export GITHUB_USERNAME=<имя_пользователя>
 $ export GITHUB_TOKEN=<полученный_токен>
 ```
 
-```ShellSession
+```sh
 $ cd ${GITHUB_USERNAME}/workspace
 $ pushd .
 $ source scripts/activate
 ```
 
-```ShellSession
+```sh
 $ \curl -sSL https://get.rvm.io | bash -s -- --ignore-dotfiles
 $ echo "source $HOME/.rvm/scripts/rvm" >> scripts/activate
 $ . scripts/activate
@@ -40,20 +40,20 @@ $ rvm use 2.4.2 --default
 $ gem install travis
 ```
 
-```ShellSession
+```sh
 $ git clone https://github.com/${GITHUB_USERNAME}/lab03 projects/lab04
 $ cd projects/lab04
 $ git remote remove origin
 $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab04
 ```
 
-```ShellSession
+```sh
 $ cat > .travis.yml <<EOF
 language: cpp
 EOF
 ```
 
-```ShellSession
+```sh
 $ cat >> .travis.yml <<EOF
 
 script:
@@ -63,7 +63,7 @@ script:
 EOF
 ```
 
-```ShellSession
+```sh
 $ cat >> .travis.yml <<EOF
 
 addons:
@@ -76,26 +76,26 @@ addons:
 EOF
 ```
 
-```ShellSession
+```sh
 $ travis login --github-token ${GITHUB_TOKEN}
 ```
 
-```ShellSession
+```sh
 $ travis lint
 ```
 
-```ShellSession
+```sh
 $ ex -sc '1i|<фрагмент_вставки_значка>' -cx README.md
 ```
 
-```ShellSession
+```sh
 $ git add .travis.yml
 $ git add README.md
 $ git commit -m"added CI"
 $ git push origin master
 ```
 
-```ShellSession
+```sh
 $ travis lint
 $ travis accounts
 $ travis sync
@@ -109,7 +109,7 @@ $ travis show
 
 ## Report
 
-```ShellSession
+```sh
 $ popd
 $ export LAB_NUMBER=04
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
@@ -137,5 +137,5 @@ $ gist REPORT.md
 - [GitLab CI](https://about.gitlab.com/gitlab-ci/)
 
 ```
-Copyright (c) 2015-2019 The ISC Authors
+Copyright (c) 2015-2020 The ISC Authors
 ```
