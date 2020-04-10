@@ -1,5 +1,7 @@
 ## Laboratory work IV
 
+[![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/tp-labs/lab04/master/preview.png)](https://yandex.ru/efir/?stream_id=vCgeA9EiySzw)
+
 Данная лабораторная работа посвещена изучению систем непрерывной интеграции на примере сервиса **Travis CI**
 
 ```sh
