@@ -1,7 +1,5 @@
 ## Laboratory work IV
 
-<a href="https://yandex.ru/efir/?stream_id=vCgeA9EiySzw"><img src="https://raw.githubusercontent.com/tp-labs/lab04/master/preview.png" width="640"/></a>
-
 Данная лабораторная работа посвещена изучению систем непрерывной интеграции на примере сервиса **Travis CI**
 
 ```sh
@@ -139,5 +137,5 @@ $ gist REPORT.md
 - [GitLab CI](https://about.gitlab.com/gitlab-ci/)
 
 ```
-Copyright (c) 2015-2020 The ISC Authors
+Copyright (c) 2015-2021 The ISC Authors
 ```
